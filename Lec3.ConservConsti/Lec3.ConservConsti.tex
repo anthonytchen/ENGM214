@@ -547,9 +547,9 @@ volume:
 
 For a general reaction converting species $X$ and $Y$ into $W$ and $Z$, with the stochiometric coefficients $v_i$:
 \begin{equation}
-	v_x X + v_y Y \to v_w W + v_z Z
+	v_x X + v_y Y \to v_w W + v_z Z,
 \end{equation}
-\noindent, the overall reaction rate $r$ can be written in terms of the component reaction rates as
+\noindent the overall reaction rate $r$ can be written in terms of the component reaction rates as
 \begin{equation}
 	r = \frac{1}{v_x V} \frac{d n_X}{d t} = \frac{1}{v_y V} \frac{d n_Y}{d t} 
 		= - \frac{1}{v_w W} \frac{d n_V}{d t} = - \frac{1}{v_Z V} \frac{d n_Z}{d t}
@@ -599,15 +599,16 @@ $T$ the temperature [K] and R the gas constant. More sophisticated equations are
 to handle non-ideal gases.
 
 Another set of important relations model physical properties (e.g. density, heat capacity, enthalpy) as function of 
-pressure, temperature and composition. For example enthalpy $h$ can be related to temperature $T$ as follows:
+pressure, temperature and composition. For example the mass specific enthalpy $\hat{H}$
+(enthalpy per unit mass, [J kg$^{-1}$]) can be related to temperature $T$ as follows:
 \begin{equation} \label{eq:enthalpy}
-	h(T) = h(T_R) + \int_{T_R}^T c_p(T) d T
+	\hat{H}(T) = \hat{H}(T_R) + \int_{T_R}^T c_p(T) d T
 \end{equation}
-\noindent where $T_R$ is the reference temperature and $c_p$ is the heat capacity. Suppose we set the reference state enthalpy
-to zero ($h(T_R)=0$), and assume a constant $c_p$ (good approximation within a narrow temperature range) and no phase change,
+\noindent where $T_R$ is the reference temperature and $c_p$ [J kg$^{-1}$ K$^{-1}$] is the specific heat capacity. Suppose we set the reference state enthalpy
+to zero ($\hat{H}(T_R)=0$ at $T_R=0$), and assume a constant $c_p$ (good approximation within a narrow temperature range) and no phase change,
 the enthapy is linear in temperature: 
 \begin{equation}
-	h(T) = c_p T
+	\hat{H}(T) = c_p T
 \end{equation}
 \noindent Where the temperature change is significant, we can take this into account
 through use of a temperature dependent heat capacity relationship with a polynomial:
