@@ -1,0 +1,86 @@
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{fontspec}
+\setmainfont{Calibri}
+
+\linespread{1}
+
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\textheight}{23cm}
+\setlength{\textwidth}{16cm}
+
+\usepackage{amssymb,mathrsfs,algorithmic,algorithm,multirow}
+\usepackage{amsmath,amsbsy,graphicx,color,url,natbib}
+\usepackage{ccaption}
+\setlength{\bibsep}{0.0pt}
+
+\newcommand{\bm}{\mathbf}
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\mt}{\mathrm}
+\newcommand{\nind}{\noindent}
+
+\usepackage{fancyhdr}
+\newcommand{\tstamp}{\today}   
+\lhead[\fancyplain{}{\rightmark}]       {\fancyplain{}{}}
+\rhead[\fancyplain{}{\rightmark}]       {\fancyplain{}{}}
+\chead[\fancyplain{}{\centermark}]       {\fancyplain{}{ENGM214 -- Process Modelling and Simulation} }
+\pagestyle{fancyplain}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{exmp}{Example}[section]
+
+\title{\vspace{-2cm} Lecture 9 -- Introduction to empirical models}
+
+\author{Tao Chen\\
+{\small \emph{Department of Chemical \& Process Engineering, University of Surrey, UK}}\\
+{\small (email: \texttt{t.chen@surrey.ac.uk}; \hspace{0.5cm} updated on \today )}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+%\tableofcontents
+\vspace{-0.5cm}
+
+\section{Motivation}
+
+\section{Typical empirical models}
+
+\section{Issues with empirical models}
+
+\section{Empirical modelling examples}
+
+\begin{exmp}[Developing an empirical model for partition coefficient]
+
+Partition coefficient between lipid and water.
+
+\end{exmp}
+
+
+\begin{exmp}[Developing an empirical model for predicting furnace efficiency]
+
+ANN model
+
+\end{exmp}
+
+
+\begin{exmp}[Developing an empirical model for xxx]
+
+A dynamic ARX type of model
+
+\end{exmp}
+
+\begin{thebibliography}{2}
+\vspace{-0.4cm}
+\bibitem[{Hangos(2001)}]{Hangos2001}
+	Hangos KM, Cameron IT, 2001. Process Modelling and Model Analysis, Academic Press: London.
+
+\end{thebibliography}
+
+\end{document}
+
+
